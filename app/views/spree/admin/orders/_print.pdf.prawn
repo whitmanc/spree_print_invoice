@@ -24,7 +24,7 @@ text "#{I18n.l @order.completed_at.to_date}", :align => :right
 
 move_down 2
 font "Helvetica", :size => 9
-text "#{@order.email}", :align => :right
+text @order.email, :align => :right
 
 
 render :partial => "address"
