@@ -22,6 +22,10 @@ move_down 2
 font "Helvetica", :size => 9
 text "#{I18n.l @order.completed_at.to_date}", :align => :right
 
+move_down 2
+font "Helvetica", :size => 9
+text "#{I18n.l @order.email}", :align => :right
+
 
 render :partial => "address"
 
